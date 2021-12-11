@@ -12,8 +12,6 @@ app.use(cors())
 
 
 async function pageLoad(pageUrl) {
-    pageUrl = 'https://campaign.brutaldivulga.com/?token=elkvZzNWdUtzNUxEbjlNVTIvWVBFZnFJK1lHRUNNTVlYWjdReXhZT0ZhaG1raDgzcThoOFlHQXc4MVBteWJLMW1rc1hBYUVxNGJHdnpwWm5Uem9DQW5ZWmR5K3RQMk9xSU5jVkFjMjZ2aWw5S2VMSmgybmttcVg3azFIWElxKzFEbVBod0g2dURqM2ZYd1F0Tzg3S2Q2ZmNDTjl2SDY0Z2lZaUt6TzArenZnPQ==';
-
     const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
 
     const page = await browser.newPage();
