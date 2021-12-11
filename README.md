@@ -31,7 +31,7 @@ $(document).ready(function(){
                         contentType: "application/json; charset=utf-8",
                         traditional: true,
                         success: function(res){
-                            $('.source-box.on .pframe').html(`<iframe src="${res.player}" />`);
+                            $('.source-box.on .pframe').html(`<iframe src="${res.player}" allowfullscreen />`);
                         },
                         error: function(){
                             console.log('error server')
