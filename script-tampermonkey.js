@@ -1,14 +1,9 @@
-# amimesonline.org cheat-player
-
-## Instale o tampermokey em seu navegador e adicione o script abaixo no aplicativo
-
-```js script
 // ==UserScript==
 // @name         Remove Protector Links animesonline.org
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  none
-// @author       joseviniciusdev
+// @description  try to take over the world!
+// @author       You
 // @match        https://animesonline.org/episodio/*
 // @icon         https://www.google.com/s2/favicons?domain=animesonline.org
 // @grant        none
@@ -46,4 +41,3 @@ $(document).ready(function(){
         $('.dooplay_player_option').on('click', () => loadPlayer());
       },100)
 });
-```
