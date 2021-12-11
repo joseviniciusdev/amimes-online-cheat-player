@@ -47,11 +47,13 @@ app.post('/return-player', async (req, res) => {
 
     const response = await pageLoad(post.url);
 
+    // console.log('response', response)
+
     return res.json({
         player: response
     })
 })
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log('server iniciado')
+    console.log('Init server')
 })
